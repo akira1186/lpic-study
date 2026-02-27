@@ -96,3 +96,21 @@ $ man manと入力し、何を表しているのか、どう元の画面に戻�
 
 
 
+###### ディレクトリの作成から削除までを行ってみた
+
+\###1.ディレクトリの作成
+
+`mkdir top/second/third`を実行したが失敗し、親フォルダがないとその中の子は作れないことが分かったため、`mkdir top/second/third`を実行した。
+
+さらに権限を絞ったフォルダも作成し、`mkdir -m 700 mydir`を実行した。
+
+\###2 ファイルを動かして名前の変更
+
+`touch memo.txt`でファイルを作り、`mv memo.txt top/second/third`で移動させ、`mv top/second/third/memo.txt top/second/third/complete.txt`で名前を変更した。
+
+\###3削除
+
+`rm -r top`を実行し、`top/second/third`が消えた。`-r`はとても強力であることが分かった。
+
+
+
